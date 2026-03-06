@@ -41,6 +41,13 @@ export default function RootLayout({
           </nav>
         </header>
         {children}
+        <footer className="border-t mt-16 py-6 text-center text-sm text-neutral-500">
+          <div>RapidFire SFT Experiments</div>
+          <div className="mt-1">UC San Diego — ML Experiment Study</div>
+          <div className="mt-1">
+            Built using RapidFire AI, HuggingFace Transformers, and Next.js.
+          </div>
+        </footer>
       </body>
     </html>
   );

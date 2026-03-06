@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="mx-auto max-w-3xl px-6 py-14">
@@ -38,30 +40,30 @@ export default function Home() {
       <section className="mt-10">
         <h2 className="text-xl font-semibold">Navigation</h2>
         <div className="mt-3 grid gap-3 sm:grid-cols-2">
-          <a className="rounded-xl border p-4 hover:bg-neutral-50" href="#">
+          <Link href="/experiments" className="block rounded-xl border p-4 hover:bg-neutral-50">
             <div className="font-medium">Experiments</div>
             <div className="text-sm text-neutral-600">
               Config grid, key knobs, and best run
             </div>
-          </a>
-          <a className="rounded-xl border p-4 hover:bg-neutral-50" href="#">
+          </Link>
+          <Link href="/results" className="block rounded-xl border p-4 hover:bg-neutral-50">
             <div className="font-medium">Results</div>
             <div className="text-sm text-neutral-600">
               Loss / eval loss / ROUGE curves and takeaways
             </div>
-          </a>
-          <a className="rounded-xl border p-4 hover:bg-neutral-50" href="#">
+          </Link>
+          <Link href="/reproducibility" className="block rounded-xl border p-4 hover:bg-neutral-50">
             <div className="font-medium">Reproducibility</div>
             <div className="text-sm text-neutral-600">
               Seeds, logs, environment, and rerun steps
             </div>
-          </a>
-          <a className="rounded-xl border p-4 hover:bg-neutral-50" href="#">
+          </Link>
+          <Link href="/repo" className="block rounded-xl border p-4 hover:bg-neutral-50">
             <div className="font-medium">Repo</div>
             <div className="text-sm text-neutral-600">
               Code + artifacts (notebook, logs, screenshots)
             </div>
-          </a>
+          </Link>
         </div>
       </section>
 
